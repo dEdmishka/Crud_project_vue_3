@@ -79,7 +79,7 @@ export default {
       // console.log(professor.id_p)
       DepartmentDataService.delete(department.department_id)
           .then(res => {
-            alert('You have successfully deleted department: ' + department.name + ' !')
+            alert('You have successfully deleted department: ' + department.department_name + ' !')
             console.log(res.data);
             this.getDepartment();
           })

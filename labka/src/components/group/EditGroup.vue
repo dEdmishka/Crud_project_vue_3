@@ -68,7 +68,7 @@ import vSelect from "vue-select";
 import 'vue-select/dist/vue-select.css';
 import {useVuelidate} from "@vuelidate/core/dist/index.esm";
 import {helpers, integer, maxLength, maxValue, minLength, minValue, required} from "@vuelidate/validators";
-import {namePattern} from "../../functions";
+import {groupPattern} from "../../functions";
 
 export default {
   components: {
@@ -100,7 +100,7 @@ export default {
           required: helpers.withMessage('Name is required', required),
           minLength: minLength(2),
           maxLength: maxLength(64),
-          namePattern: helpers.withMessage('Name is invalid', namePattern)
+          groupPattern: helpers.withMessage('Name is invalid', groupPattern)
 
         },
         course: {

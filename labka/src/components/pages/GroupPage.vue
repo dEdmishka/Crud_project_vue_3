@@ -79,7 +79,7 @@ export default {
       // console.log(professor.id_p)
       GroupDataServices.delete(group.group_id)
           .then(res => {
-            alert('You have successfully deleted group: ' + group.name + ' !')
+            alert('You have successfully deleted group: ' + group.group_name + ' !')
             console.log(res.data);
             this.getGroups();
           })
